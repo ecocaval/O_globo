@@ -1,0 +1,349 @@
+a {
+    text-decoration: none;
+    color: #2F3134;
+}
+
+/*Division line between logo and navigation buttons*/
+.horizontal_division_line_top {
+    height: 1px;
+    background-color: #EBEDEF;
+    margin-bottom: 10px;
+}
+
+/*Spaces navigation buttons*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+header nav a { 
+    font-family: Encode Sans;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/*Adds box shadow to the news when the news is being selected*/
+header nav a:hover, .main_news:hover, .red_news:hover, 
+.green_news:hover, .orange_news:hover {
+    box-shadow: 0px 0px 5px #0000005a;
+}
+
+/*Navigation buttons colors*/
+header nav .g1_logo {
+    color: #C3170C;
+}
+
+header nav .globo_logo {
+    color: #1E4B9B;
+}
+
+header nav .valor_logo {
+    color: #006766;
+}
+
+header nav .ge_logo {
+    color: #07AA47;
+}
+
+header nav .cartola_logo {
+    color: #E3662B;
+}
+
+header nav .globoplay_logo {
+    color: #FB0735;
+}
+
+header nav .dropz_logo {
+    color: #FF75BB;
+}
+
+header nav .gshow_logo {
+    color: #EC7D00;
+}
+
+header nav .quem_logo {
+    color: #323333;
+}
+
+header nav .receitas_logo {
+    color: #A81D83;
+}
+
+/*Division line between navigation buttons and news section*/
+.horizontal_division_line_bottom {
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #EBEDEF;
+}
+
+/*Centralizes news content*/
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main_news, .red_news, .green_news, .orange_news {
+    border-radius: 5px;
+}
+
+@media (min-width: 1250px) {    
+
+    /*Cancels the display of the division lines made for mobile viewing*/
+    .horizontal_division_line_media {
+        display: none;
+    }
+    
+    /*Centralizes page logo*/
+    .page_logo, header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page_logo img {
+        width: 171px;
+        margin: 22px 0px; 
+    }
+
+    /*Cancels the display of the mobile page logo*/
+    .page_logo_mobile {
+        display: none;
+    }
+
+    header nav {
+        width: 1250px;
+    }
+
+    main {
+        align-items: center;
+    }
+    
+    .news_block {
+        display: flex;
+        width: 1250px;
+    }
+    
+    .news_block .left_news_block {
+        width: 50%;
+    }
+    
+    .news_block .left_news_block .main_news h1 {
+        font-family: Encode Sans;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 67px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        margin-bottom: 29px;
+        color: #C4160C;
+    }
+    
+    .news_block .left_news_block .main_news p {
+        font-family: Encode Sans;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: -0.01em;
+        text-align: left;
+    }
+    
+    /*Division lines between news*/
+    .news_block .left_news_block .horizontal_division_line {
+        height: 1px;
+        background-color: #EBEDEF; 
+        margin: 25px 0px;
+    }
+    
+    .news_block .left_news_block .middle_news {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .red_news {
+        width: 193px;
+    }
+    
+    .red_news img {
+        height: 110px;
+        width: 193px;
+        border-radius: 12px;    
+    }
+
+    .red_news h2, .orange_news h2, .green_news h2 {
+        font-family: Encode Sans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        margin: 5px 0px;
+        text-align: left;
+        color: #C4170C;
+    }
+    
+    .red_news h2 {
+        color: #C4170C;
+    }
+    
+    .red_news h3, .green_news h3, .orange_news h3 {
+        font-family: Encode Sans;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.045em;
+        text-align: left;
+        color: #2F3134; 
+    }
+    
+    .red_news p, .green_news p,  .orange_news p {
+        font-family: Encode Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: -0.048em;
+        text-align: left;
+        color: #2F3134;
+        
+    }
+    
+    .news_block .left_news_block .bottom_news {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .news_block .right_news_block {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        width: 50%;
+    }
+    
+    .right_news_block .vertical_division_line {
+        width: 1px;
+        background-color: #EBEDEF;
+    }
+    
+    .right_news_block .middle_news_columns, .right_news_block .right_news_columns {
+        width: 240px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .green_news h2 {  
+        color: #16AE54;
+        margin-top: 5px 0px;
+    }
+    
+    .green_news p,  .orange_news p {
+        margin-top: 10px;   
+    }
+    
+    .green_news img, .orange_news img {
+        height: 128px;
+        width: 240px;
+        border-radius: 12px;    
+    }
+    
+    .orange_news h2 {  
+        color: #EC8006;
+        margin: 5px 0px;
+    }
+}
+
+
+@media (max-width: 1249px) {
+
+    /*Cancels the display of the desktop page logo*/
+    .page_logo {
+        display: none;
+    }
+
+    /*Centralizes page logo*/
+    .page_logo_mobile, header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page_logo_mobile img {
+        width: 208px;
+        margin: 22px 0px; 
+    }
+
+    /*Cancels the display of some of the navigation buttons*/
+    header nav .globoplay_logo, header nav .dropz_logo, header nav .gshow_logo, header nav .quem_logo,header nav .receitas_logo  {
+        display: none;
+    }
+
+    header nav {
+        width: 600px;
+    }
+
+    header nav a { 
+        font-size: 21px;
+    }
+
+    .news_block {
+        width: 600px;
+    }
+
+    .news_block p {
+        font-family: Encode Sans;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: #C4160C;
+    }
+
+    .main_news h1 {
+        font-family: Encode Sans;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.028em;
+        text-align: left;
+        margin-bottom: 10px;
+        color: #C4160C;
+    }
+
+    .main_news p {
+        margin-top: 15px;
+    }
+    
+    .left_news_block .horizontal_division_line, .horizontal_division_line_media {
+        height: 1px;
+        background-color: #EBEDEF; 
+        margin: 25px 0px;
+    }
+
+    .news_block img {
+        width: 600px;
+        border-radius: 12px;    
+    }
+
+    /*I've deleted one of the subtitles in this media mode*/
+    .red_news h2, .green_news h2, .orange_news h2 {
+        font-size: 0px
+    }
+    
+    .red_news h3, .green_news h3, .orange_news h3 {
+        font-family: Encode Sans;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.028em;
+        text-align: left;
+        margin: 10px 0px;
+        color: #C4160C;
+    }   
+
+    .orange_news p {
+        margin-top: 10px;
+    }
+}
